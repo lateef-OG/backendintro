@@ -34,8 +34,12 @@
 	  <div class="large-8 medium-centered columns">
 		<h2><?php echo "Hello " . $name ; ?></h2><br>
 		<h4><?php 
-		 for($i = 0; $i <= $number; $i = $i + 2 ){
-			echo $i . "  ";
+		 for($i = 1; $i <= $number; $i = $i + 1 ){
+			if($i % 2 == 0){
+				echo "<i>yinka </i>";
+			}else{
+				echo "<strong>" . $i . "</strong>" . "  ";
+			}
 		 }
 		 
 		?></h4>
